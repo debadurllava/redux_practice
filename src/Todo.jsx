@@ -6,7 +6,7 @@ import { useState } from "react";
 export const Todo = () =>{
 
     const [tasks, setTasks] = useState("")
-    const task = useSelector((state) => state.task);
+    const task = useSelector((state) => state.taskReducer.task);
     console.log('react state',task)
     const dispatch = useDispatch();
 
